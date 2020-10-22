@@ -1,0 +1,31 @@
+{
+  "name": "mb/adminsearch_extension",
+  "description": "Extension of the admin search",
+  "type": "oxid-module",
+  "keywords": ["oxid", "modules", "eShop"],
+  "homepage": "https://www.oxid-esales.com/en/home.html",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Max Buhe",
+      "email": "oxid@13uhe.de"
+    }
+  ],
+  "require": {
+    "php": "^7.3-7.4",
+    "ext-ionCube-Loader": "*",
+    "oxid-esales/oxideshop-ce": "6.1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "MB\\Adminsearch\\": "../../../source/modules/mb/adminsearch_extension"
+    }
+  },
+  "extra": {
+    "oxideshop": {
+      "source-directory": "/src",
+      "target-directory": "mb/adminsearch_extension"
+    }
+  }
+}
